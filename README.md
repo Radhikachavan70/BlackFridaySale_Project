@@ -1,39 +1,38 @@
-# Covid19_analysis_Project
-Project Name: COVID-19 Data Analysis
+#BlackFridaySale_Project
 
-Summary:
-This project examines COVID-19 data to uncover trends and impacts, utilizing data science methods taught in a Udemy course. It follows the CRISP-DM framework for hands-on data analysis.
+PROJECT NAME: Black Friday Sales Prediction
 
-Goals:
+Overview
+This project focuses on predicting Black Friday sales using various regression machine learning
+algorithms. The goal is to assist retail stores and eCommerce businesses in determining optimal
+product prices based on historical sales data to maximize profits.
+Dataset Description
+• Source: Sourced from an Analytics Vidhya hackathon.
+• Features: Includes age, gender, marital status, product categories, city demographics, and
+purchase amounts.
+• Records: Over 537,000 entries.
+Exploratory Data Analysis (EDA)
+• Demographics: Approximately 75% of purchases were made by male consumers, with single
+men spending the most.
 
-Collect and clean COVID-19 data.
-Identify trends and insights.
-Develop visualizations.
-Use machine learning to make predictions.
-Create dynamic dashboards.
-Methodology:
+• Age Insights: Consumers aged 25-40 had the highest spending.
+• City Insights: City B contributed the most to overall sales, while City C had higher purchases
+of the analyzed product.
+Data Preparation
+• Encoding: Categorical columns (Age, Gender, City Category) were encoded using Label
+Encoder.
+• Missing Values: Missing entries in Product_Category_2 and Product_Category_3 were filled.
+Modeling Phase
+• Data Split: The dataset was divided into training (80%) and test (20%) sets.
+• Models Implemented:
+• Linear Regressor
+• Decision Tree Regressor
+• Random Forest Regressor
+• XGBoost Regressor
 
-Understanding the Business Context:
-Analyze COVID-19 data to inform public health strategies.
-
-Data Collection:
-Data was gathered via REST APIs, including daily case counts, vaccination data, and demographic information.
-
-Data Cleaning:
-Using Python’s Pandas library, the data was cleaned by:
-
-Addressing missing data.
-Normalizing values for comparison.
-Parsing date columns for time series analysis.
-Data Analysis and Visualization:
-
-Performed Exploratory Data Analysis (EDA) with summary statistics and visualizations to identify patterns.
-Built dynamic dashboards using Plotly and Dash to visualize daily case numbers, cumulative totals, and vaccination progress.
-Machine Learning Techniques:
-
-Linear regression to explore relationships between variables.
-Exponential modeling to forecast future cases.
-Time series forecasting using Facebook Prophet.
-Conclusion:
-This project successfully applied data science techniques to analyze COVID-19 data, yielding useful insights and an interactive dashboard for tracking the pandemic.
-
+Evaluation Metric
+• Metric Used: Root Mean Square Error (RMSE).
+• Best Performance: XGBoost Regressor achieved the best results with an RMSE score of 2879.
+Conclusion
+The XGBoost Regressor outperformed all other models, providing the most accurate
+predictions for Black Friday sales, demonstrating its effectiveness in retail price optimization.
